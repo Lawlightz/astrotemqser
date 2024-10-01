@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1b2e; /* Fundo roxo escuro */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: #282846; /* Tom de roxo escuro para o header */
+    color: #b4ff00; /* Verde vibrante para contraste */
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #b4ff00; /* Verde para links do menu */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffb3ff; /* Efeito hover roxo claro nos links */
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #b4ff00; /* Verde para o título principal */
+}
+
+.grid-artistas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.artista-item {
+    background-color: #2d2d44; /* Fundo roxo para os cartões de artista */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de elevação ao passar o mouse */
+.artista-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Deixar os links clicáveis */
+.artista-item a {
+    text-decoration: none;
+    color: #b4ff00; /* Verde para os nomes dos artistas */
+    display: block;
+}
+
+.artista-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.artista-item h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.artista-item p {
+    font-size: 16px;
+    color: #ddd; /* Texto mais suave */
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

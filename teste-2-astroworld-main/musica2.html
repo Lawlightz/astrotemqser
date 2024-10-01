@@ -1,0 +1,139 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AstroWorld - Músicas</title>
+<link rel="stylesheet" href="musica2.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+</style>
+</head>
+<body>
+    <body>
+        <header>
+            <nav>
+              <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="musica2.html">Músicas</a></li>
+                <li><a href="artistas2.html">Artistas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="perfilreal.html">Perfil</a></li>
+              </ul>
+            </nav>
+        </header>       
+    <main>
+        <h2>Descubra Novas Músicas</h2>
+        <div class="music-container">
+            <div class="music-card">
+                <img src="nodachi.jpg" alt="Capa do álbum com arte abstrata em tons de azul e roxo" class="music-image" width="300" height="300">
+                <div class="music-info">
+                    <h3>Jin-Kali, Prince Of Psychopathy</h3>
+                    <p>Artista: Nodachi</p>
+                    <p>Gênero: Metal industrial</p>
+                    <button class="play-button" onclick="playMusic('musicas/jin-kali.mp3')">▶ Reproduzir</button>
+                </div>
+            </div>
+            <div class="music-card">
+                <img src="guillotine.jpg" alt="Capa do álbum mostrando uma paisagem urbana futurística" class="music-image" width="300" height="300">
+                <div class="music-info">
+                    <h3>Guillotine</h3>
+                    <p>Artista:Stray From The Path</p>
+                    <p>Gênero: Nu Metal</p>
+                    <button class="play-button" onclick="playMusic('Stray From The Path - Guillotine [Official Music Video].mp3')">▶ Reproduzir</button>
+                </div>
+            </div>
+            <div class="music-card">
+                <img src="the-optimist.jpg" alt="Capa do álbum com uma ilustração de um astronauta flutuando no espaço" class="music-image" width="300" height="300">
+                <div class="music-info">
+                    <h3>The Optimist</h3>
+                    <p>Artista: Skinless</p>
+                    <p>Gênero: Death Metal</p>
+                    <button class="play-button" onclick="playMusic('musicas/the-optimist.mp3')">▶ Reproduzir</button>
+                </div>
+            </div>
+            <div class="music-card">
+                <img src="porfirio.png" alt="Capa do álbum com um padrão geométrico colorido" class="music-image" width="300" height="300">
+                <div class="music-info">
+                    <h3>Baixa Temperatura</h3>
+                    <p>Artista: Big Rush</p>
+                    <p>Gênero: Plug, Trap</p>
+                    <button class="play-button" onclick="playMusic('musicas/baixa-temperatura.mp3')">▶ Reproduzir</button>
+                </div>
+            </div>
+            <div class="music-card">
+                <img src="artworks-4LfZvcnPqfaA-0-t500x500.jpg" alt="Capa do álbum mostrando uma galáxia espiral" class="music-image" width="300" height="300">
+                <div class="music-info">
+                    <h3>Ain't it Funny</h3>
+                    <p>Artista: Danny Brown</p>
+                    <p>Gênero: Hip Hop</p>
+                    <button class="play-button" onclick="playMusic('musicas/aint-it-funny.mp3')">▶ Reproduzir</button>
+                </div>
+            </div>
+            <div class="music-card">
+                <img src="tomb.jpeg" alt="Capa do álbum com uma aurora boreal estilizada" class="music-image" width="300" height="300">
+                <div class="music-info">
+                    <h3>Hypnosis</h3>
+                    <p>Artista: Sleep Token</p>
+                    <p>Gênero: Metal Industrial</p>
+                    <button class="play-button" onclick="playMusic('musicas/hypnosis.mp3')">▶ Reproduzir</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <audio id="audioPlayer" controls style="display: none;">
+        <source id="audioSource" src="" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+
+    <script>
+        function playMusic(musicUrl) {
+            var audioPlayer = document.getElementById('audioPlayer');
+            var audioSource = document.getElementById('audioSource');
+            audioSource.src = musicUrl;
+            audioPlayer.load();
+            audioPlayer.play();
+        }
+        var currentAudio = null; // Para armazenar o áudio atual
+    var currentButton = null; // Para armazenar o botão atual
+
+    function togglePlayPause(button, musicUrl) {
+        var audioPlayer = document.getElementById('audioPlayer');
+        var audioSource = document.getElementById('audioSource');
+
+        // Se já houver uma música tocando e o mesmo botão foi pressionado, pausa ou continua a reprodução
+        if (currentAudio && currentAudio.src === audioSource.src) {
+            if (currentAudio.paused) {
+                currentAudio.play();
+                button.textContent = '⏸ Pausar';
+            } else {
+                currentAudio.pause();
+                button.textContent = '▶ Reproduzir';
+            }
+        } else {
+            // Se for uma nova música, parar a música atual (se houver)
+            if (currentAudio) {
+                currentAudio.pause();
+                if (currentButton) currentButton.textContent = '▶ Reproduzir';
+            }
+
+            // Atualizar o botão e carregar a nova música
+            audioSource.src = musicUrl;
+            audioPlayer.load();
+            audioPlayer.play();
+
+            // Atualizar o botão de controle
+            button.textContent = '⏸ Pausar';
+
+            // Definir o áudio e o botão atuais como os novos
+            currentAudio = audioPlayer;
+            currentButton = button;
+    </script>
+    
+    <footer>
+        <p>&copy; 2024 AtroWorld. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</body>
+</html>

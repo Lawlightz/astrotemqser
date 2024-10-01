@@ -1,0 +1,855 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #331d46;
+    color: #333;
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Seção Destaque */
+.destaque {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagem-musica.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(160, 153, 248);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 100%;
+}
+
+.destaque h2, .destaque h3 {
+    color: #ff5733;
+}
+
+.destaque audio {
+    margin-top: 10px;
+}
+
+/* Seção Inicial */
+.inicio {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #080b16;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+}
+
+.inicio h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.card a:hover {
+    color: #007BFF;
+}
+
+.card p {
+    padding: 0 10px 10px;
+}
+
+/* Seções adicionais */
+.sobre, .novidades, .playlists {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sobre h2, .novidades h2, .playlists h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.novidades article {
+    margin-bottom: 20px;
+}
+
+.novidades article h3 {
+    margin-bottom: 5px;
+}
+
+.playlist {
+    margin-bottom: 10px;
+}
+
+.playlist h3 {
+    color: #007BFF;
+}
+
+/* Botões Chamativos */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #c70039;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: #f5f5f5;
+}
+/* Seção Inicial */
+.inicio {
+    margin-top: 20px;
+    padding: 20px;
+    color: rgb(160, 153, 248);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .inicio h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+ 
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #331d46;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Seção Músicas */
+.musicas {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.musicas h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#lista-musicas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-musicas li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#lista-musicas li:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+}
+
+.musica-info {
+    margin-bottom: 10px;
+}
+
+.musica-info h3 {
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.musica-info p {
+    color: #666;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #331d46;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Seção Músicas */
+.musicas {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.musicas h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#lista-musicas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-musicas li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#lista-musicas li:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+}
+
+.musica-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.musica-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.musica-info {
+    flex: 1;
+}
+
+.musica-info h3 {
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.musica-info p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #331d46;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Seção Artistas */
+.artistas {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.artistas h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#lista-artistas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-artistas li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#lista-artistas li:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+}
+
+.artista-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.artista-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.artista-info {
+    flex: 1;
+}
+
+.artista-info h3 {
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.artista-info p {
+    color: #666;
+}
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #331d46;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Seção Login */
+.login {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login label {
+    text-align: left;
+    font-weight: 700;
+}
+
+.login input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #0056b3;
+}
+
+.login p {
+    margin-top: 20px;
+}
+
+.login a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #331d46;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Seção Contato */
+.contato {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.contato h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    margin-bottom: 20px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato label {
+    text-align: left;
+    font-weight: 700;
+}
+
+.contato input, .contato textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contato button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #0056b3;
+}
+
+.info-contato {
+    margin-top: 20px;
+}
+
+.info-contato h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-contato p {
+    margin: 5px 0;
+}
+
+
+/* Perfil section */
+.perfil { 
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        
+    }
+  
+  .perfil-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .perfil-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .perfil-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .perfil-playlists {
+    margin-bottom: 20px;
+  }
+  
+  .perfil-playlists h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .perfil-playlists ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .perfil-playlists li {
+    margin-bottom: 10px;
+  }
+  
+  .perfil-playlists a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .perfil-playlists a:hover {
+    color: #23527c;
+  }
+  
+  .perfil-artists {
+    margin-bottom: 20px;
+  }
+  
+  .perfil-artists h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .perfil-artists ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .perfil-artists li {
+    margin-bottom: 10px;
+  }
+  
+  .perfil-artists a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .perfil-artists a:hover {
+    color: #23527c;
+  }
+
+.ihihi {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+}

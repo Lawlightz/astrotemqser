@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="musica2.html">Músicas</a></li>
+        <li><a href="artistas2.html">Artistas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="perfilreal.html">Perfil</a></li>
+      </ul>
+    </nav>
+</header>  
+  <main>
+    <section class="login">
+      <h2>Login</h2>
+      <form action="processar-login.php" method="post">
+        <label for="username">Nome de usuário:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Entrar</button>
+      </form>
+      <p>Não tem uma conta? <a href="registro2.html">Registre-se aqui</a></p>
+    </section>
+  </main>
+
+  <footer class="ihihi">
+    <p>© 2024 A$troworld. Todos os direitos reservados.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

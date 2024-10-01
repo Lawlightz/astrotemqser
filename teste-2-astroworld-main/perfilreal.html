@@ -1,0 +1,135 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroWorld - Suas Playlists</title>
+    <link rel="stylesheet" href="perfilreal.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+    </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+              <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="musica2.html">Músicas</a></li>
+                <li><a href="artistas2.html">Artistas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="perfilreal.html">Perfil</a></li>
+              </ul>
+            </nav>
+        </header> 
+    
+        <main>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar playlists..." id="playlist-search">
+                <button id="search-button">🔍</button>
+            </div>
+            
+            <aside class="profile-sidebar">
+                <img src="perfil.jpg" alt="Foto de perfil do usuário" class="profile-picture" width="200" height="200">
+                <div class="profile-info">
+                    <h2>Terry Crews</h2>
+                    <p>@Terrycrewsreal</p>
+                    <p>Sou eu!! Vindo direto de Hollywood para o A$troworld</p>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">1.2K</div>
+                        <div class="stat-label">Seguidores</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">32</div>
+                        <div class="stat-label">Seguindo</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">0</div>
+                        <div class="stat-label">Músicas</div>
+                    </div>
+                </div>
+            </aside>
+            
+            <div class="profile-content">
+                <section class="content-section">
+                    <h3>Suas Playlists</h3>
+                    <div class="playlist-grid">
+                        <div class="playlist-card">
+                            <img src="kawai.jpg" alt="Capa da playlist Viagem Intergaláctica" class="playlist-image" width="150" height="150">
+                            <h4 class="playlist-title">Kawaiiii</h4>
+                            <p class="playlist-details">15 músicas • 1h 23min</p>
+                            <div class="playlist-actions">
+                                <button class="playlist-button play-button">▶️</button>
+                                <button class="playlist-button edit-button">✏️</button>
+                                <button class="playlist-button delete-button">🗑️</button>
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="esquisito.jpg" alt="Capa da playlist Nebulosa Chill" class="playlist-image" width="150" height="150">
+                            <h4 class="playlist-title">Esquisitas</h4>
+                            <p class="playlist-details">20 músicas • 1h 45min</p>
+                            <div class="playlist-actions">
+                                <button class="playlist-button play-button">▶️</button>
+                                <button class="playlist-button edit-button">✏️</button>
+                                <button class="playlist-button delete-button">🗑️</button>
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="explosivo.png" alt="Capa da playlist Explosão Estelar" class="playlist-image" width="150" height="150">
+                            <h4 class="playlist-title">Explosivas</h4>
+                            <p class="playlist-details">12 músicas • 58min</p>
+                            <div class="playlist-actions">
+                                <button class="playlist-button play-button">▶️</button>
+                                <button class="playlist-button edit-button">✏️</button>
+                                <button class="playlist-button delete-button">🗑️</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="content-section">
+                    <h3>Criar Nova Playlist</h3>
+                    <form class="new-playlist-form">
+                        <input type="text" placeholder="Nome da nova playlist" class="new-playlist-input" required>
+                        <input type="file" id="playlist-cover" accept="image/*" class="new-playlist-cover">
+                        <label for="playlist-cover" class="cover-label">Escolher Capa</label>
+                        <button type="submit" class="new-playlist-button">Criar Playlist</button>
+                    </form>
+                </section>
+    
+                <section class="content-section">
+                    <h3>Reproduzidas Recentemente</h3>
+                    <div class="recent-tracks">
+                        <div class="track-item">
+                            <img src="the-optimist.jpg" alt="Capa da música 1" class="track-image" width="50" height="50">
+                            <div class="track-info">
+                                <h4 class="track-title">The Optimist</h4>
+                                <p class="track-artist">Skinless</p>
+                            </div>
+                            <button class="track-play">▶️</button>
+                        </div>
+                        <div class="track-item">
+                            <img src="guillotine.jpg" alt="Capa da música 2" class="track-image" width="50" height="50">
+                            <div class="track-info">
+                                <h4 class="track-title">Guillotine</h4>
+                                <p class="track-artist">stay From The Path/p>
+                            </div>
+                            <button class="track-play">▶️</button>
+                        </div>
+                        <div class="track-item">
+                            <img src="plugs.jpg" alt="Capa da música 3" class="track-image" width="50" height="50">
+                            <div class="track-info">
+                                <h4 class="track-title">Tá bom</h4>
+                                <p class="track-artist">Big Rush</p>
+                            </div>
+                            <button class="track-play">▶️</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 AstroWorld. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+    </html>

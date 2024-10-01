@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="perfil2.css">
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="musica2.html">Músicas</a></li>
+            <li><a href="artistas2.html">Artistas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="perfil2.html">Perfil</a></li>
+          </ul>
+        </nav>
+    </header>  
+
+    <main>
+        <section class="perfil">
+            <!-- Quadro branco para o perfil -->
+            <div class="perfil-container">
+                <div class="perfil-info">
+                    <img src="perfil.jpg" alt="Foto de Perfil" class="perfil-avatar">
+                    <h2>Terry Crews <i class="fas fa-user"></i></h2>
+                    <p><i class="fas fa-calendar-alt"></i> Membro desde: Janeiro 2024</p>
+                    <p><i class="fas fa-music"></i> Bio: Amo atuar e escutar músicas esquisitas <3</p>
+                </div>
+            </div>
+
+            <!-- Playlists do Usuário -->
+            <div class="perfil-container">
+                <div class="perfil-playlists">
+                    <h2><i class="fas fa-playlist"></i> Minhas Playlists</h2>
+                    <ul>
+                        <li><a href="#">Nightcore</a></li>
+                        <li><a href="#">Lolicore</a></li>
+                        <li><a href="#">Kawai Metal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Artistas Seguidos -->
+            <div class="perfil-container">
+                <div class="perfil-artistas">
+                    <h2><i class="fas fa-heart"></i> Artistas Seguidos</h2>
+                    <ul>
+                        <li><a href="#">Artista 1</a></li>
+                        <li><a href="#">Artista 2</a></li>
+                        <li><a href="#">Artista 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Músicas Recentes -->
+            <div class="perfil-container">
+                <div class="perfil-musicas">
+                    <h2><i class="fas fa-music"></i> Músicas mais ouvidas</h2>
+                    <ul>
+                        <li>
+                            <div class="musica-item">
+                                <img src="artworks-4LfZvcnPqfaA-0-t500x500.jpg" alt="Capa do Álbum" class="musica-capa">
+                                <div class="musica-info">
+                                    <h3>Ain't It Funny</h3>
+                                    <p>Artista: <a href="#">Danny Brown</a></p>
+                                    <audio controls>
+                                        <source src="musica1.mp3" type="audio/mpeg">
+                                        Seu navegador não suporta o elemento de áudio.
+                                    </audio>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="musica-item">
+                                <img src="nodachi.jpg" alt="Capa do Álbum" class="musica-capa">
+                                <div class="musica-info">
+                                    <h3>Jin-Kali, Prince Of Psychopathy</h3>
+                                    <p>Artista: <a href="#">Nodachi</a></p>
+                                    <audio controls>
+                                        <source src="musica2.mp3" type="audio/mpeg">
+                                        Seu navegador não suporta o elemento de áudio.
+                                    </audio>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 A$troworld. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

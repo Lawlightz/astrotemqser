@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="musica2.html">Músicas</a></li>
+        <li><a href="artistas2.html">Artistas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="perfilreal.html">Perfil</a></li>
+      </ul>
+    </nav>
+</header>   
+  <main>
+    <section class="contato">
+      <h2>Contato</h2>
+      <p>Tem alguma dúvida ou sugestão? Preencha o formulário abaixo e entre em contato conosco.</p>
+      <form action="processar-contato.php" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="info-contato">
+        <h3>Informações de Contato</h3>
+        <p><strong>Email:</strong> contato@site-musica.com</p>
+        <p><strong>Telefone:</strong> (11) 1234-5678</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ihihi">
+    <p>© 2024 A$troworld. Todos os direitos reservados.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
